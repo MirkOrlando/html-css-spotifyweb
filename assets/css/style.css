@@ -48,6 +48,10 @@ ul.unstyled {
     transform: rotate(90deg);
 }
 
+.tt-uppercase {
+    text-transform: uppercase;
+}
+
 /* #region dislpay */
 
 .d-flex {
@@ -74,7 +78,7 @@ ul.unstyled {
     font-size: 13px;
 }
 
-/* #region font-size */
+/* #endregion font-size */
 
 /* #endregion utility */
 
@@ -83,6 +87,14 @@ ul.unstyled {
 #site-main {
     position: relative;
     display: flex;
+}
+
+#site-main .lighter {
+    color: var(--lighter);
+}
+
+#site-main a {
+    color: var(--light);
 }
 
 /* #region side-bar */
@@ -105,18 +117,31 @@ ul.unstyled {
     row-gap: 0.5rem;
 }
 
-#site-main .side-bar li>a {
+#site-main .side-bar ul.panel li>a {
     color: var(--light);
     padding: 0 1rem;
     align-content: center;
 }
 
-#site-main .side-bar ul>li.active {
+#site-main .side-bar ul.panel>li.active {
     border-left: 1px solid var(--alternative);
 }
 
-#site-main .side-bar li>a.active {
+#site-main .side-bar ul.panel li>a.active {
     color: var(--lighter);
+}
+
+#site-main .side-bar .my-playlists {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem;
+}
+
+#site-main .side-bar a>i.new-playlist {
+    color: var(--darker);
+    background-color: var(--light);
+    padding: 0.5rem;
+    margin-right: 5px;
 }
 
 /* #endregion side-bar */
