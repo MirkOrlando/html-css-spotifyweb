@@ -234,7 +234,7 @@ ul.unstyled {
 
 #site-footer .left-menu {
     align-items: center;
-    column-gap: 0.5rem;
+    column-gap: 1rem;
 }
 
 #site-footer .left-menu .track .track-artist {
@@ -297,6 +297,31 @@ ul.unstyled {
 
 
 /* #endregion center-menu */
+
+/* #region right-menu */
+
+#site-footer .right-menu {
+    align-items: center;
+    column-gap: 1rem;
+    color: var(--lighter);
+}
+
+#site-footer .right-menu .volume-line {
+    height: 1px;
+    width: 8vw;
+}
+
+#site-footer .right-menu .volume-line > .current-volume-level {
+    width: 20%;
+    border: 1px solid var(--lighter);
+}
+
+#site-footer .right-menu .volume-line > .remaining-volume-level {
+    width: 80%;
+    border: 1px solid var(--light);
+}
+
+/* #endregion right-menu */
 
 /* #endregion site-footer */
 
