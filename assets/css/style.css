@@ -144,6 +144,11 @@ ul.unstyled {
     margin-right: 5px;
 }
 
+#site-main .side-bar ul.container-playlists>li {
+    padding: 0.5rem 0;
+}
+
+
 /* #endregion side-bar */
 
 #site-main .container-content {
