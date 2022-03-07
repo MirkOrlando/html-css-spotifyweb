@@ -56,6 +56,13 @@ ul.unstyled {
     font-weight: bold;
 }
 
+.btn {
+    border: 1px solid var(--lighter);
+    color: var(--lighter);
+    border-radius: 30px;
+    padding: 0.75rem 2rem;
+}
+
 /* #region dislpay */
 
 .d-flex {
@@ -113,16 +120,16 @@ ul.unstyled {
     color: var(--lighter);
 }
 
-#site-main a {
-    color: var(--light);
-}
-
 /* #region side-bar */
 
 #site-main .side-bar {
     height: calc(100vh - 90px);
     width: 15%;
     background-color: var(--darker);
+    color: var(--light);
+}
+
+#site-main .side-bar a {
     color: var(--light);
 }
 
@@ -200,17 +207,26 @@ ul.unstyled {
 
 /* #endregion side-bar */
 
+/* #region upgrade */
+
+#site-main .upgrade {
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    height: 90px;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+#site-main .upgrade .btn {   
+}
+
+/* #endregion upgrade */
+
 #site-main .container-content {
     height: calc(100vh - 90px);
     width: 85%;
     background-color: var(--primary);
-}
-
-#site-main .upgrade {
-    position: absolute;
-    top: 0;
-    height: 10%;
-    background-color: rgb(0 0 0 / 50%);
 }
 
 /* #endregion site-main */
