@@ -108,7 +108,7 @@ ul.unstyled {
 /* #region side-bar */
 
 #site-main .side-bar {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     width: 20%;
     background-color: var(--darker);
     color: var(--light);
@@ -189,7 +189,7 @@ ul.unstyled {
 /* #endregion side-bar */
 
 #site-main .container-content {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     width: 80%;
     background-color: var(--primary);
 }
@@ -206,11 +206,15 @@ ul.unstyled {
 /* #region site-footer */
 
 #site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     bottom: 0;
-    height: 80px;
+    height: 90px;
     width: 100%;
     background-color: var(--secondary);
+    color: var(--lighter);
 }
 
 /* #endregion site-footer */
