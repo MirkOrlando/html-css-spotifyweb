@@ -52,6 +52,10 @@ ul.unstyled {
     text-transform: uppercase;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* #region dislpay */
 
 .d-flex {
@@ -155,21 +159,31 @@ ul.unstyled {
 #sidebar-footer {
     position: absolute;
     bottom: 0;
+    width: 100%;
     padding: 1rem;
     padding-bottom: 0.5rem;
 }
 
-#sidebar-footer .install a{
-    column-gap: 2px;
+#sidebar-footer .install {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--light);
 }
 
-#sidebar-footer .install i{
+#sidebar-footer .install i {
     border-radius: 50%;
     border: 1px solid var(--light);
-    height: 0.5rem;
-    width: 0.5rem;
 }
 
+#sidebar-footer .user {
+    padding-top: 0.5rem;
+}
+
+#sidebar-footer .user i {
+    border-radius: 50%;
+    background-color: var(--light);
+    padding: 0.25rem;
+    margin-right: 5px;
+}
 
 
 /* #endregion side-bar */
