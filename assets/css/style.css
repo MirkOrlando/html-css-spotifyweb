@@ -63,6 +63,10 @@ ul.unstyled {
     padding: 0.75rem 2rem;
 }
 
+.pb-4 {
+    padding-bottom: 4px;
+}
+
 /* #region dislpay */
 
 .d-flex {
@@ -120,16 +124,18 @@ ul.unstyled {
     color: var(--lighter);
 }
 
+#site-main .side-bar a,
+#site-main .nav-bar a  {
+    color: var(--light);
+}
+
+
 /* #region side-bar */
 
 #site-main .side-bar {
     height: calc(100vh - 90px);
     width: 15%;
     background-color: var(--darker);
-    color: var(--light);
-}
-
-#site-main .side-bar a {
     color: var(--light);
 }
 
@@ -223,11 +229,37 @@ ul.unstyled {
 
 /* #endregion upgrade */
 
+/* #region container-content */
+
 #site-main .container-content {
     height: calc(100vh - 90px);
     width: 85%;
     background-color: var(--primary);
 }
+
+#site-main .main-content nav.nav-bar {
+    margin-top: 100px;
+    align-items: center;
+}
+
+#site-main .main-content nav.nav-bar > ul {
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+#site-main .main-content nav.nav-bar .active {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    border-bottom: 1px solid var(--alternative);
+    width: 40%;
+}
+
+
+
+/* #endregion container-content */
+
 
 /* #endregion site-main */
 
