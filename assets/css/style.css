@@ -78,6 +78,10 @@ ul.unstyled {
     font-size: 13px;
 }
 
+.fs-8 {
+    font-size: 8px;
+}
+
 /* #endregion font-size */
 
 /* #endregion utility */
@@ -147,6 +151,25 @@ ul.unstyled {
 #site-main .side-bar ul.container-playlists>li {
     padding: 0.5rem 0;
 }
+
+#sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#sidebar-footer .install a{
+    column-gap: 2px;
+}
+
+#sidebar-footer .install i{
+    border-radius: 50%;
+    border: 1px solid var(--light);
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
 
 
 /* #endregion side-bar */
