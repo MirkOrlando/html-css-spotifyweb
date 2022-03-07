@@ -6,11 +6,89 @@
 
 /* #region common */
 
+:root {
+    --darker: #000000;
+    --lighter: #ffffff;
+    --primary: #141922;
+    /* bgcolor main */
+    --secondary: #282828;
+    /* bgcolor footer */
+    --light: #717171;
+    /* color texts */
+    --alternative: #ADFF2F;
+    /* color border active */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /* #endregion common */
+
+/* #region utility */
+
+.w-100 {
+    width: 100%;
+}
+
+/* #region dislpay */
+
+.d-flex {
+    display: flex;
+}
+
+/* #endregion dislpay */
+
+/* #region position */
+
+.p-relative {
+    position: relative;
+}
+
+/* #endregion position */
+
+/* #endregion utility */
+
+/* #region site-main */
+
+/* #endregion site-main */
+
+#site-main {
+    position: relative;
+    display: flex;
+}
+
+#site-main .side-bar {
+    height: calc(100vh - 80px);
+    width: 15%;
+    background-color: var(--darker);
+}
+
+#site-main .container-content {
+    height: calc(100vh - 80px);
+    width: 85%;
+    background-color: var(--primary);
+}
+
+#site-main .upgrade {
+    position: absolute;
+    top: 0;
+    height: 10%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/* #region site-footer */
+
+#site-footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: var(--secondary);
+}
+
+/* #endregion site-footer */
+
+
