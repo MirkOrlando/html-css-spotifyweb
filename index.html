@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -87,6 +88,7 @@
     <!-- /#site-main -->
 
     <footer id="site-footer">
+
         <div class="left-menu d-flex">
             <img src="./assets/img/sinister.jpeg" alt="">
             <div class="track fs-12">
@@ -94,11 +96,41 @@
                 <div class="track-title">Brano Nome</div>
             </div>
             <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-folder"></i>
+            <i class="fa fa-folder-o"></i>
         </div>
         <!-- /.left-menu -->
-        <div class="center-menu">center-menu</div>
+
+        <div class="center-menu d-flex">
+            <nav class="track-actions d-flex fs-18">
+                <a href="">
+                    <i class='fas fa-random'></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-backward-step"></i>
+                </a>
+                <a href="" class="fs-2rem">
+                    <i class="fa-regular fa-circle-play"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-forward-step"></i>
+                </a>
+                <a href="">
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </a>
+            </nav>
+            <div class="track-duration d-flex">
+                <span class="current-time fs-12">0:25</span>
+                <div class="track-timeline d-flex">
+                    <div class="time-spent p-relative">
+                        <div class="current-point"></div>
+                    </div>
+                    <div class="time-remaining"></div>
+                </div>
+                <span class="total-time fs-12">4:35</span>
+            </div>
+        </div>
         <!-- /.center-menu -->
+
         <div class="right-menu">right-menu</div>
         <!-- /.right-menu -->
     </footer>

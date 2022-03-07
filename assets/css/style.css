@@ -74,6 +74,14 @@ ul.unstyled {
 
 /* #region font-size */
 
+.fs-2rem {
+    font-size: 2rem;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
 .fs-1rem {
     font-size: 1rem;
 }
@@ -238,6 +246,57 @@ ul.unstyled {
     width: 50px;
     object-fit: cover;
 }
+
+/* #endregion left-menu */
+
+/* #region center-menu */
+
+#site-footer .center-menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    width: 50%;
+}
+
+#site-footer .center-menu > nav.track-actions {
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#site-footer .center-menu > nav.track-actions a {
+    color: var(--lighter);
+}
+
+#site-footer .center-menu > .track-duration {
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+
+#site-footer .center-menu > .track-duration .track-timeline {
+    height: 1px;
+    width: 40vw;
+}
+
+#site-footer .center-menu > .track-duration .track-timeline > .time-spent {
+    width: 15%;
+    border: 1px solid var(--lighter);
+}
+
+#site-footer .center-menu > .track-duration .track-timeline > .time-remaining {
+    width: 85%;
+    border: 1px solid var(--light);
+}
+
+#site-footer .center-menu .current-time,
+#site-footer .center-menu .total-time {
+    color: var(--lighter);
+}
+
+
+/* #endregion center-menu */
 
 /* #endregion site-footer */
 
