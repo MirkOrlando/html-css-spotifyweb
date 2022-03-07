@@ -129,6 +129,10 @@ ul.unstyled {
     color: var(--light);
 }
 
+#site-main .main-content {
+    color: var(--lighter);
+}
+
 
 /* #region side-bar */
 
@@ -256,7 +260,24 @@ ul.unstyled {
     width: 40%;
 }
 
+#site-main .main-content .row {
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    padding: 2rem 1rem;
+}
 
+#site-main .main-content .card {
+    width: calc(100% / 6);
+    text-align: center;
+}
+
+#site-main .main-content .card-title{
+    font-size: 1rem;
+}
+
+#site-main .main-content .card-subtitle{
+    color: var(--light);
+}
 
 /* #endregion container-content */
 
