@@ -82,6 +82,10 @@ ul.unstyled {
     font-size: 13px;
 }
 
+.fs-12 {
+    font-size: 12px;
+}
+
 .fs-8 {
     font-size: 8px;
 }
@@ -109,7 +113,7 @@ ul.unstyled {
 
 #site-main .side-bar {
     height: calc(100vh - 90px);
-    width: 20%;
+    width: 15%;
     background-color: var(--darker);
     color: var(--light);
 }
@@ -190,7 +194,7 @@ ul.unstyled {
 
 #site-main .container-content {
     height: calc(100vh - 90px);
-    width: 80%;
+    width: 85%;
     background-color: var(--primary);
 }
 
@@ -213,8 +217,26 @@ ul.unstyled {
     bottom: 0;
     height: 90px;
     width: 100%;
+    padding: 0.5rem;
     background-color: var(--secondary);
+    color: var(--light);
+}
+
+/* #region left-menu */
+
+#site-footer .left-menu {
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+#site-footer .left-menu .track .track-artist {
     color: var(--lighter);
+}
+
+#site-footer img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
 }
 
 /* #endregion site-footer */
