@@ -210,6 +210,7 @@ ul.unstyled {
 
 #sidebar-footer {
     height: 80px;
+    padding: 0 1rem;
 }
 
 #sidebar-main {
@@ -313,6 +314,10 @@ ul.unstyled {
 #sidebar-footer .install {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--light);
+}
+
+#sidebar-footer .install a {
+    column-gap: 0.5rem;
 }
 
 #site-main #sidebar-footer .install img {
@@ -622,12 +627,15 @@ ul.unstyled {
 @media screen and (max-width: 535px) {
 
     #site-main .side-bar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         width: 50px;
         padding: 0.5rem 0;
+        justify-content: space-between;
     }  
+
+    #site-main .side-bar #sidebar-header {
+        align-items: center;
+        row-gap: 0;
+    }
 
     #site-main .container-content {
         width: calc(100% - 50px);
@@ -651,7 +659,7 @@ ul.unstyled {
         width: 28px;
     }
 
-    #site-main .side-bar .my-playlists {
+    #site-main .side-bar #sidebar-main {
         display: none;
     }
 
@@ -660,10 +668,7 @@ ul.unstyled {
     }    
 
     #sidebar-footer {
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        padding: 0 0 0.5rem;
     }    
 
     #sidebar-footer .user .user-pic {
