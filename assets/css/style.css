@@ -34,6 +34,10 @@ a {
 
 /* #endregion common */
 
+/* #region hover */
+
+/* #endregion hover */
+
 /* #region utility */
 
 .w-100 {
@@ -135,7 +139,7 @@ ul.unstyled {
 
 #site-main .main-content {
     color: var(--lighter);
-    height: 100%;
+    height: calc(100% - 90px);
     overflow-y: auto;
 }
 
@@ -144,7 +148,7 @@ ul.unstyled {
 
 #site-main .side-bar {
     height: calc(100vh - 90px);
-    width: 15%;
+    width: 230px;
     background-color: var(--darker);
     color: var(--light);
 }
@@ -241,7 +245,7 @@ ul.unstyled {
 
 #site-main .container-content {
     height: calc(100vh - 90px);
-    width: 85%;
+    width: calc(100% - 230px);
     background-color: var(--primary);
 }
 
@@ -365,12 +369,14 @@ ul.unstyled {
 
 #site-footer .center-menu > .track-duration .track-timeline > .time-spent {
     width: 15%;
-    border: 1px solid var(--lighter);
+    height: 2px;
+    background-color: var(--lighter);
 }
 
 #site-footer .center-menu > .track-duration .track-timeline > .time-remaining {
     width: 85%;
-    border: 1px solid var(--light);
+    height: 2px;
+    background-color: var(--light);
 }
 
 #site-footer .center-menu .current-time,
@@ -396,12 +402,14 @@ ul.unstyled {
 
 #site-footer .right-menu .volume-line > .current-volume-level {
     width: 20%;
-    border: 1px solid var(--lighter);
+    height: 2px;
+    background-color: var(--lighter);
 }
 
 #site-footer .right-menu .volume-line > .remaining-volume-level {
     width: 80%;
-    border: 1px solid var(--light);
+    height: 2px;
+    background-color: var(--light);
 }
 
 /* #endregion right-menu */
