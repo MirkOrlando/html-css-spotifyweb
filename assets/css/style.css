@@ -213,7 +213,7 @@ ul.unstyled {
     width: 70%;
 }
 
-#site-main .side-bar>img.logo.logo-small {
+#site-main .side-bar>img.logo-small {
     display: none;
 }
 
@@ -296,11 +296,6 @@ ul.unstyled {
 #sidebar-footer .install {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--light);
-}
-
-#sidebar-footer .install i {
-    border-radius: 50%;
-    border: 1px solid var(--light);
 }
 
 #sidebar-footer .user {
@@ -527,6 +522,7 @@ ul.unstyled {
 #site-footer .right-menu {
     align-items: center;
     justify-content: space-around;
+    column-gap: 0.25rem;
     width: 200px;
     color: var(--lighter);
 }
@@ -599,4 +595,84 @@ ul.unstyled {
 }
 
 /* #endregion @media query s  */
+
+/* #region @media query xs  */
+
+@media screen and (max-width: 535px) {
+
+    #site-main .side-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50px;
+    }  
+
+    #site-main .container-content {
+        width: calc(100% - 50px);
+    }    
+
+    #site-main .side-bar .logo {
+        display: none;
+    }
+
+    #site-main .side-bar img.logo-small {
+        display: inline-block;
+        width: 28px;
+    }
+
+    #site-main .side-bar span {
+        display: none;
+    }  
+
+    #site-main .side-bar ul.panel img,
+    #site-main #sidebar-footer img {
+        width: 28px;
+    }
+
+    #site-main .side-bar .my-playlists {
+        display: none;
+    }
+
+    #sidebar-footer .install {
+        border-bottom: none;
+    }    
+
+    #sidebar-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: none;
+    }    
+
+    #sidebar-footer .user .user-pic {
+        width: 25px;
+        height: 25px;
+        margin-right: none;
+    }
+
+    #site-main #sidebar-footer .user .user-pic img {
+        width: 1rem;
+    }    
+    
+
+    #site-main .main-content .card {
+        width: calc(100% / 2.5);
+    }  
+    #site-main .main-content .card-title{
+        font-size: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    #site-main .main-content .card-subtitle {
+        font-size: 0.5rem;
+    }
+
+    #site-main .main-content .row-title {
+        font-size: 1.25rem;
+    }    
+    
+}
+
+/* #endregion @media query xs  */
+
 
