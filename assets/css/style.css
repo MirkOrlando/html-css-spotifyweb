@@ -335,7 +335,7 @@ ul.unstyled {
 #site-main .main-content .row {
     flex-wrap: wrap;
     column-gap: 1.5rem;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0;
 }
 
 #site-main .main-content .row-subtitle {
@@ -418,6 +418,7 @@ ul.unstyled {
     align-items: center;
     row-gap: 0.5rem;
     width: 50%;
+    padding: 0 1rem;
 }
 
 #site-footer .center-menu > nav.track-actions {
@@ -442,13 +443,13 @@ ul.unstyled {
 }
 
 #site-footer .time-spent {
-    width: 25%;
+    width: 15%;
     height: 2px;
     background-color: var(--lighter);
 }
 
 #site-footer .time-remaining {
-    width: 75%;
+    width: 85%;
     height: 2px;
     background-color: var(--light);
 }
@@ -527,3 +528,28 @@ ul.unstyled {
 }
 
 /* #endregion @media query md  */
+
+/* #region @media query s  */
+
+@media screen and (max-width: 630px) {
+
+    #site-main .main-content .card {
+        width: calc(100% / 2.5);
+    }  
+    #site-main .main-content .card-title{
+        font-size: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    #site-main .main-content .card-subtitle {
+        font-size: 0.5rem;
+    }
+
+    #site-main .main-content .row-title {
+        font-size: 1.25rem;
+    }    
+    
+}
+
+/* #endregion @media query s  */
+
