@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -18,31 +21,35 @@
 
     <main id="site-main">
         <aside class="side-bar fs-13 p-relative">
-            <img src="./assets/img/logo.svg" alt="" class="logo">
-            <img src="./assets/img/logo-small.svg" alt="" class="logo-small">
-            <ul class="panel unstyled d-flex">
-                <li class="active">
-                    <a href="" class="active d-flex">
-                        <img src="./assets/img/home.svg" alt="">
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="d-flex">
-                        <img src="./assets/img/search.svg" alt="">
-                        <span>Cerca</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="d-flex">
-                        <img src="./assets/img/libreria.svg" alt="">
-                        <span>La tua Libreria</span>
-                    </a>
-                </li>
-            </ul>
-            <!-- /.panel -->
+            <header id="sidebar-header">
+                <img src="./assets/img/logo.svg" alt="" class="logo">
+                <img src="./assets/img/logo-small.svg" alt="" class="logo-small">
+                <ul class="panel unstyled d-flex">
+                    <li class="active">
+                        <a href="" class="active d-flex">
+                            <img src="./assets/img/home.svg" alt="">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex">
+                            <img src="./assets/img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="d-flex">
+                            <img src="./assets/img/libreria.svg" alt="">
+                            <span>La tua Libreria</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- /.panel -->
+            </header>
+            <!-- /#sidebar-header -->
 
-            <div class="my-playlists d-flex">
+            <main id="sidebar-main" class="my-playlists d-flex">
+
                 <h4 class="tt-uppercase lighter">Playlist</h4>
                 <a href="" class="fs-1rem">
                     <i class="fa-solid fa-plus new-playlist"></i>
@@ -60,9 +67,9 @@
                     <li><a href="">Nome Playlist</a></li>
                 </ul>
                 <!-- /.container-playlists -->
-
-            </div>
-            <!-- /.my-playlists -->
+                
+            </main>
+            <!-- /#sidebar-main -->
 
             <footer id="sidebar-footer">
                 <div class="install">
@@ -255,7 +262,7 @@
                 </a>
                 <a href="">
                     <i class="fa fa-folder-o fs-14"></i>
-                </a>    
+                </a>
             </div>
         </div>
         <!-- /.left-menu -->

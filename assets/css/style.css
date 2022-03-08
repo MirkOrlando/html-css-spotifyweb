@@ -201,19 +201,38 @@ ul.unstyled {
 
 /* #region side-bar */
 
+#sidebar-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    height: 160px;
+}
+
+#sidebar-footer {
+    height: 80px;
+}
+
+#sidebar-main {
+    height: calc(100% - 240px);
+}
+
 #site-main .side-bar {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 0.5rem 0;
     height: calc(100vh - 90px);
     width: 230px;
     background-color: var(--darker);
     color: var(--light);
 }
 
-#site-main .side-bar>img.logo {
-    padding: 1rem;
+#site-main .side-bar img.logo {
+    padding: 0 1rem;
     width: 70%;
 }
 
-#site-main .side-bar>img.logo-small {
+#site-main .side-bar img.logo-small {
     display: none;
 }
 
@@ -222,10 +241,6 @@ ul.unstyled {
 #site-main #sidebar-footer img {
     width: 20px;
     filter: brightness(0.5);
-}
-
-#site-main #sidebar-footer .install img {
-    width: 15px;
 }
 
 #site-main #sidebar-footer .install a,
@@ -268,10 +283,8 @@ ul.unstyled {
 #site-main .side-bar .my-playlists {
     flex-direction: column;
     row-gap: 0.5rem;
-    padding: 1rem;
-    height: calc(100% - 250px);
-    min-height: 50px;
-    overflow-y: auto;
+    padding: 0 1rem;
+    min-height: 75px;
 }
 
 #site-main .side-bar a>i.new-playlist {
@@ -281,21 +294,29 @@ ul.unstyled {
     margin-right: 5px;
 }
 
+#site-main .side-bar ul.container-playlists {
+    height: calc(100% - 75px);
+    overflow-y: auto;
+}
+
+
 #site-main .side-bar ul.container-playlists>li {
     padding: 0.5rem 0;
 }
 
 #sidebar-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 #sidebar-footer .install {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--light);
+}
+
+#site-main #sidebar-footer .install img {
+    width: 1rem;
 }
 
 #sidebar-footer .user {
@@ -605,6 +626,7 @@ ul.unstyled {
         flex-direction: column;
         align-items: center;
         width: 50px;
+        padding: 0.5rem 0;
     }  
 
     #site-main .container-content {
@@ -641,13 +663,13 @@ ul.unstyled {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: none;
+        padding: 0 0 0.5rem;
     }    
 
     #sidebar-footer .user .user-pic {
         width: 25px;
         height: 25px;
-        margin-right: none;
+        margin-right: 0;
     }
 
     #site-main #sidebar-footer .user .user-pic img {
