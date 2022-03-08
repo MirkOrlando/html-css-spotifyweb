@@ -52,6 +52,14 @@ a {
     transform: scale(120%);
 }
 
+#site-main .card:hover img {
+    filter: brightness(0.5);
+}
+
+#site-main .card:hover .fa-circle-play {
+    display: inline;
+}
+
 #site-footer .track-title a:hover {
     color: var(--lighter);
     text-decoration: underline;
@@ -182,7 +190,6 @@ ul.unstyled {
     overflow-y: auto;
 }
 
-
 /* #region side-bar */
 
 #site-main .side-bar {
@@ -289,6 +296,15 @@ ul.unstyled {
     background-color: var(--primary);
 }
 
+#site-main .card .fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: none;
+}
+
 #site-main .main-content nav.nav-bar {
     align-items: center;
     padding-top: 0.5rem;
@@ -310,7 +326,7 @@ ul.unstyled {
 
 #site-main .main-content .row {
     flex-wrap: wrap;
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     padding: 2rem 1rem;
 }
 
@@ -338,7 +354,6 @@ ul.unstyled {
 }
 
 /* #endregion container-content */
-
 
 /* #endregion site-main */
 
