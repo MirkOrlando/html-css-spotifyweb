@@ -59,10 +59,12 @@ a {
 
 #site-main .card:hover img {
     filter: brightness(0.5);
+    cursor: pointer;
 }
 
 #site-main .card:hover .fa-circle-play {
     display: inline;
+    cursor: pointer;
 }
 
 #site-footer .track-title a:hover {
@@ -444,6 +446,7 @@ ul.unstyled {
     bottom: 0;
     height: 90px;
     width: 100%;
+    padding: 0 0.5rem;
     background-color: var(--secondary);
     color: var(--light);
 }
@@ -548,14 +551,14 @@ ul.unstyled {
 #site-footer .right-menu {
     align-items: center;
     justify-content: space-around;
-    column-gap: 0.25rem;
+    column-gap: 0.5rem;
     width: 200px;
     color: var(--lighter);
 }
 
 #site-footer .right-menu .volume-line {
     height: 4px;
-    width: 100px;
+    width: 70%;
 }
 
 #site-footer .current-volume-level {
