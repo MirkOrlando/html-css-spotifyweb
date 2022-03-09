@@ -445,6 +445,10 @@ ul.unstyled {
     gap: 1rem;
 }
 
+#site-main .main-content nav.nav-bar li {
+    padding-bottom: 0.25rem;
+}
+
 #site-main .main-content nav.nav-bar .active-lf {
     position: absolute;
     right: 50%;
