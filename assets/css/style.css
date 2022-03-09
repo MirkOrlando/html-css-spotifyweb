@@ -25,6 +25,19 @@ body {
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+
+::-webkit-scrollbar-thumb {
+    background: rgb(56 56 56 / 65%);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(114, 114, 114, 0.65);
+  }
+
 img {
     max-width: 100%;
     transition: 500ms linear;
