@@ -27,11 +27,13 @@ body {
 
 img {
     max-width: 100%;
+    transition: 500ms linear;
 }
 
 a {
     text-decoration: none;
     color: var(--light);
+    transition: 500ms linear;
 }
 
 /* #endregion common */
@@ -57,14 +59,18 @@ a {
     transform: scale(120%);
 }
 
+#site-main .card:hover {
+    background-color: rgb(56 56 56 / 60%);
+    cursor: pointer;
+}
+
+
 #site-main .card:hover img {
     filter: brightness(0.5);
-    cursor: pointer;
 }
 
 #site-main .card:hover .fa-circle-play {
     display: inline;
-    cursor: pointer;
 }
 
 #site-footer .track-title a:hover {
@@ -203,6 +209,7 @@ ul.unstyled {
     color: var(--lighter);
     height: calc(100% - 90px);
     overflow-y: auto;
+    transition: 500ms linear;
 }
 
 /* #region side-bar */
@@ -232,6 +239,7 @@ ul.unstyled {
     width: 230px;
     background-color: var(--darker);
     color: var(--light);
+    transition: height 500ms linear;
 }
 
 #site-main .side-bar img.logo {
@@ -362,7 +370,9 @@ ul.unstyled {
     padding-right: 2rem;
     height: 90px;
     background-color: rgb(0 0 0 / 50%);
+    transition: 500ms linear;
 }
+
 
 /* #endregion upgrade */
 
@@ -372,6 +382,7 @@ ul.unstyled {
     height: calc(100vh - 90px);
     width: calc(100% - 230px);
     background-color: var(--primary);
+    transition: height 500ms linear;
 }
 
 #site-main .card .fa-circle-play {
@@ -381,6 +392,7 @@ ul.unstyled {
     transform: translate(-50%, -50%);
     font-size: 3rem;
     display: none;
+    color: var(--alternative);
 }
 
 #site-main .main-content nav.nav-bar {
@@ -405,12 +417,12 @@ ul.unstyled {
 
 #site-main .main-content .row {
     flex-direction: column;
-    padding: 2rem 1rem 0;
+    padding: 2rem 0rem 0 1rem;
 }
 
 #site-main .main-content .row-card {
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 0.5rem;
     padding-top: 1.5rem;
 }
 
@@ -421,7 +433,16 @@ ul.unstyled {
 #site-main .main-content .card {
     width: calc(100% / 7);
     text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: background-color 500ms linear;
 }
+
+#site-main .main-content .card-cover,
+#site-main .main-content .card-cover img {
+    border-radius: 10px;
+}
+
 
 #site-main .main-content .artists .card-cover > img{
     border-radius: 50%;
@@ -430,6 +451,13 @@ ul.unstyled {
 #site-main .main-content .card-title {
     font-size: 0.8rem;
     padding: 0.5rem 0;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 3.4rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 #site-main .main-content .card-subtitle,
@@ -454,6 +482,7 @@ ul.unstyled {
     padding: 0 0.5rem;
     background-color: var(--secondary);
     color: var(--light);
+    transition: height 500ms linear;
 }
 
 /* #region left-menu */
@@ -596,7 +625,6 @@ ul.unstyled {
     }
     
     #site-main .main-content .card-subtitle {
-        font-size: 0.5rem;
     }
 
     #site-main .main-content .row-title {
@@ -732,10 +760,6 @@ ul.unstyled {
         height: calc(100vh - 60px);
     }    
 
-    #site-main .main-content {
-        height: calc(100% - 60px);
-    }    
-
     #site-main .side-bar .logo {
         display: none;
     }
@@ -778,7 +802,9 @@ ul.unstyled {
     
     #site-main .main-content .card {
         width: calc(100% / 2.5);
+        flex-shrink: 0;
     }  
+
     #site-main .main-content .card-title{
         font-size: 0.75rem;
         padding-bottom: 0.5rem;
@@ -788,9 +814,28 @@ ul.unstyled {
         font-size: 0.5rem;
     }
 
+    #site-main .card .fa-circle-play {
+        font-size: 2rem;
+    }   
+
     #site-main .main-content .row-title {
         font-size: 1.25rem;
     }  
+
+    #site-main nav.nav-bar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #site-main .nav-bar a:hover{
+        color: var(--lighter);
+    }
+
+    #site-main .main-content .row-card {
+        flex-wrap: nowrap;
+        overflow-x: auto;   
+        padding-bottom: 0.75rem;     
+    }    
 
     #site-footer {
         height: 60px;
@@ -847,3 +892,22 @@ ul.unstyled {
 
 /* #endregion @media query xs  */
 
+/* #region @media query heightsmall  */
+
+@media screen and (max-height: 260px) {
+
+    #site-main .upgrade {
+        height: 0;
+    }
+
+    #site-main .upgrade .btn {
+        display: none;
+    }
+    
+    #site-main .main-content {
+        height: 100%;
+    } 
+    
+}
+
+/* #endregion @media query heightsmall  */
