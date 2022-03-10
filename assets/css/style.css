@@ -89,11 +89,23 @@ a {
     animation: active-rg 1s forwards;
 }
 
+#site-main .main-content nav.nav-bar .dropdown:hover .fa-angle-up {
+    display: inline;
+}
+
+#site-main .main-content nav.nav-bar .dropdown:hover .fa-angle-down {
+    display: none;
+}
+
+#site-main .main-content nav.nav-bar .dropdown:hover ul,
+#site-main .main-content nav.nav-bar .dropdown:hover li {
+    animation: dropdown 1s forwards
+}
+
 #site-main .main-content .card:hover {
     background-color: rgb(56 56 56 / 65%);
     cursor: pointer;
 }
-
 
 #site-main .card:hover img {
     filter: brightness(0.5);
@@ -199,6 +211,50 @@ a {
 
     100% {
         transform: scale(1) translatey(0);
+    }
+    
+}
+
+@keyframes dropdown {
+    0% {
+        height: 0;
+        visibility: hidden;
+    }
+
+    50% {
+        height: unset;
+    }
+
+    95% {
+        height: unset;
+    }
+
+    100% {
+        visibility: visible;
+        height: unset;
+        font-size: unset;
+    }
+
+}
+
+@keyframes dropdown-out {
+
+    0% {
+        visibility: visible;
+        height: unset;
+        font-size: unset;
+    }
+
+    95% {
+        visibility: hidden;
+        font-size: 0;
+        height: unset;
+    }
+
+    100% {
+        visibility: hidden;
+        height: 0;
+        font-size: 0;
     }
     
 }
@@ -499,7 +555,12 @@ ul.unstyled {
     padding-top: 0.5rem;
 }
 
-#site-main .main-content nav.nav-bar > ul {
+#site-main .main-content nav.nav-bar .dropdown-icons {
+    text-align: center;
+    display: none;
+}
+
+#site-main .main-content nav.nav-bar ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
@@ -968,6 +1029,19 @@ ul.unstyled {
         width: 1rem;
     }    
     
+    #site-main .main-content nav.nav-bar .dropdown-icons {
+        display: block;
+    }    
+    
+    #site-main .main-content nav.nav-bar .dropdown-icons .fa-angle-up {
+        display: none;
+    }  
+
+    #site-main .main-content nav.nav-bar .dropdown-icons .fa-angle-up {
+        color: var(--lighter);
+    }  
+
+
     #site-main .main-content .card {
         width: calc(100% / 1.5);
         max-width: 150px;
@@ -987,9 +1061,20 @@ ul.unstyled {
         font-size: 1.25rem;
     }  
 
+    #site-main nav.nav-bar ul {
+        height: 0;
+        visibility: hidden;
+        animation: dropdown-out 1s;
+    }
+
+
     #site-main nav.nav-bar li {
         width: 100%;
         text-align: center;
+        height: 0;
+        visibility: hidden;
+        font-size: 0;
+        animation: dropdown-out 1s;
     }
 
     #site-main .nav-bar a:hover{
