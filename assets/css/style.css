@@ -89,19 +89,6 @@ a {
     animation: active-rg 1s forwards;
 }
 
-#site-main .main-content nav.nav-bar .dropdown:hover .fa-angle-up {
-    display: inline;
-}
-
-#site-main .main-content nav.nav-bar .dropdown:hover .fa-angle-down {
-    display: none;
-}
-
-#site-main .main-content nav.nav-bar .dropdown:hover ul,
-#site-main .main-content nav.nav-bar .dropdown:hover li {
-    animation: dropdown 1s forwards
-}
-
 #site-main .main-content .card:hover {
     background-color: rgb(56 56 56 / 65%);
     cursor: pointer;
@@ -1041,7 +1028,19 @@ ul.unstyled {
         color: var(--lighter);
     }  
 
-
+    #site-main .main-content nav.nav-bar .dropdown:hover .fa-angle-up {
+        display: inline;
+    }
+    
+    #site-main .main-content nav.nav-bar .dropdown:hover .fa-angle-down {
+        display: none;
+    }
+    
+    #site-main .main-content nav.nav-bar .dropdown:hover ul,
+    #site-main .main-content nav.nav-bar .dropdown:hover li {
+        animation: dropdown 1s forwards
+    }
+    
     #site-main .main-content .card {
         width: calc(100% / 1.5);
         max-width: 150px;
